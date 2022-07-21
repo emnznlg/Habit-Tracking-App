@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="app.js" defer></script>
+    <title>Habit Tracker</title>
+  </head>
+  <body>
+    <section class="theme-container">
+      <button class="theme" id="theme"></button>
+    </section>
+    <h1>My Habit Tracker</h1>
+    <section class="habit-container"></section>
+    <section class="new-habit">
+      <button class="new-habit__add">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </section>
+    <section class="modal-container" aria-hidden="true">
+      <div class="modal">
+        <h2>Add a new habit</h2>
+        <input type="text" id="title" placeholder="Enter a habit name" />
+        <div class="icons">
+          <button class="icon" id="book">
+            <i class="fa-solid fa-book"></i>
+          </button>
+          <button class="icon" id="book">
+            <i class="fa-regular fa-comment-dots"></i>
+          </button>
+          <button class="icon" id="book">
+            <i class="fa-solid fa-phone"></i>
+          </button>
+          <button class="icon" id="book">
+            <i class="fa-solid fa-camera"></i>
+          </button>
+          <button class="icon" id="book">
+            <i class="fa-solid fa-check"></i>
+          </button>
+          <button class="icon" id="book">
+            <i class="fa-solid fa-pen"></i>
+          </button>
+        </div>
+        <div class="modal-btns">
+          <button id="add-btn">Add Habit</button>
+          <button id="cancel-btn">Cancel</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
